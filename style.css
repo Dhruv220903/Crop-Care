@@ -86,3 +86,27 @@ nav ul li a{
     font-weight: 700;
     font-size: 30px;
 }
+.imgSlider img{
+    min-width: 100vh;
+}
+.LinkToPg{
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+}
+.LinkToPg span{
+    padding: 20px;
+    background-color: orange;
+    margin: 1px;
+    border-radius: 15%;
+
+
+}
+.LinkToPg span a{
+    text-decoration: none;
+    color: white;
+    font-family: "Inconsolata", monospace ;
+    font-weight: 700;
+    font-size:20px;
+
+}
