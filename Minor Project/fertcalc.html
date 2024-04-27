@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrient Calculator</title>
+  <link rel="stylesheet" href="fertcalc.css">
+</head>
+<body>
+  <center><h1>Nutrient Calculator</h1></center>
+  <div class="calculator">
+    <label for="crop">Select Crop:</label>
+    <select id="crop">
+      <option value="">Select...</option>
+      <option value="apple">Apple</option>
+      <option value="maize">Maize</option>
+      <option value="wheat">Wheat</option>
+      <option value="potato">Potato</option>
+      <option value="rice">Rice</option>
+    </select>
+
+    <label for="fieldArea">Field Area (acres):</label>
+    <input type="number" id="fieldArea" min="0" required>
+
+    <h2>Nutrients (kg/acre):</h2>
+    <label for="nitrogen">Nitrogen:</label>
+    <input type="number" id="nitrogen" disabled>
+    <label for="phosphorous">Phosphorous:</label>
+    <input type="number" id="phosphorous" disabled>
+    <label for="potassium">Potassium:</label>
+    <input type="number" id="potassium" disabled>
+
+    <button onclick="calculateNutrients()">Calculate</button>
+  </div>
+
+  <script src="fertcalc.js"></script>
+</body>
+</html>
