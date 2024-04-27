@@ -1,6 +1,11 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+import { getAuth,GoogleAuthProvider, signInWithPopup} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+
+const provider = new GoogleAuthProvider();
+
 const firebaseConfig = {
   apiKey: "AIzaSyBPTZsfnq_qHLxA__MwoCKaJ3o0sQ8BIGY",
   authDomain: "mycc-eeecb.firebaseapp.com",
@@ -16,6 +21,7 @@ const analytics = getAnalytics(app);
 
 
 const auth = getAuth(app);
+auth.languageCode="it"
 const button=document.querySelector("#create");
 button.addEventListener('click',function(event){
   event.preventDefault();
@@ -34,4 +40,23 @@ const password=document.querySelector("#password").value;
     alert("Account already exits");
   });
 
-})
+});
+
+
+const googleLog = document.querySelector("#google");
+googleLog.addEventListener("click",function(event){
+  alert("hi")
+signInWithPopup(auth, provider)
+  .then((result) => {
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const user = result.user;
+    console.log(user);
+    window.location.href="demo.html"
+  
+  }).catch((error) => {
+  
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
+
+});
