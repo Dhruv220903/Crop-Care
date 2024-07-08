@@ -212,4 +212,104 @@ label{
     display: flex;
     
 }
+@media  screen and (max-width: 915px) 
+   {
+
+    nav{
+        min-height: 50px;
+    }
+    nav ul{
+        display: none;
+    }
+    #main{
+        z-index: 1;
+        position: relative;
+
+    }
+    #Box{
+        margin-top: 50px;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    #mainpg{
+        font-size: xx-large;
+        
+    }
+    
+    .Boxes h2{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .Up img{
+        margin: 0;
+        max-width: 70px;
+        max-height: 70px;
+    }
+    #arrow{
+        margin: 0;
+    }
+    .picture{
+        height: 170px;
+        width: 350px;
+    }
+    .Box5{
+        margin-top: 80px;
+    }
+    .circle{
+        margin: 0;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+    }
+    .circle img{
+        text-align: center;
+        width: 20px;
+        height: 20px;
+    }
+    .Boxes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+        min-width: 30vw;
+    }
+    #mainpg{
+        margin-top: 50px;
+    }
+    #aboutus{
+        margin-top: 150px;
+    }
+    #aboutus p{
+        font-size: 11px;
+    }
+    #aboutus h1{
+        margin: 0;
+        font-size: large;
+    }
+    #predict {
+        font-size: 10px;
+    }
+    footer p,a{
+        font-size: x-small;
+    }
+    .list ul li a{
+        font-size: x-small;
+    }
+    .c-name{
+        margin-left: 5px;
+    }
+    .legal{
+        
+            
+            padding: 5px;
+        
+    }
+    .legal a{
+        font-size: x-small;
+    }
+   }
 
