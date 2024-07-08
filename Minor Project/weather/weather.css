@@ -103,3 +103,43 @@ body{
     display: flex;
    
 }
+@media  screen and (max-width:915px) {
+    #card{
+        margin-top: 60px;
+        max-width: 80%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .search{
+        margin-top: 5px;
+        padding: 0;
+    }
+    .search button{
+        max-width: 20px;
+        max-height: 20px;
+    }
+    .search input{
+        max-height: 20px;
+    }
+    .city {
+        margin: 0;
+    }
+    .humidity{
+        font-size: 10px;
+    }
+    .humidity-label{
+        font-size: 10px;
+        margin-top: 0;
+    }
+    .details{
+        margin-left: 0;
+    }
+    .temp{
+        margin-right: 10px;
+    }
+    .weather{
+        justify-content: center;
+    }
+    
+   
+}
